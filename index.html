@@ -9,7 +9,7 @@
   <meta name="keywords" content="">
 
   <!-- Favicons -->
-  <link href="assets/img/baner.ico" rel="icon">
+  <link href="../assets/img/baner.ico" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
@@ -46,8 +46,22 @@
             <li><a href="#escuchanos">ESCUCHANOS</a></li>
             <!-- <li><a href="#mercancia">MERCANCIA</a></li> -->
             <li><a href="#footer">CONTACTO</a></li>
-          </ul>
-          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+            <li id="userIconContainer" style="display: none;">
+              <div class="user-icon" style="position: relative; display: inline-block;">
+                  <button id="userIconButton">
+                      <i class="bi bi-person text-light" style="font-size: 1.5rem;"></i>
+                  </button>
+                  <div id="userPopup" class="user-popup dark-background text-light">
+                      <a href="perfil.html"><p>Perfil</p></a>
+                      <button id="logoutButton" style="background: none; border: none; cursor: pointer;">
+                          <i class="bi bi-box-arrow-left" style="color: red;"></i>
+                      </button>
+                  </div>
+              </div>
+          </li>
+            <li id="loginLink"><a href="login.html">LOGIN</a></li>
+            </ul>
+            <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
       </div>
     </div>
@@ -247,5 +261,6 @@
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/sesion.js"></script>
 </body>
 </html>

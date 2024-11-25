@@ -1,15 +1,4 @@
-/**
-* Template Name: Day
-* Template URL: https://bootstrapmade.com/day-multipurpose-html-template-for-free/
-* Updated: Aug 07 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
-/*--------------------------------------------------------------
-# Font & Color Variables
-# Help: https://bootstrapmade.com/color-system/
---------------------------------------------------------------*/
 /* Fonts */
 :root {
   --default-font: "Open Sans",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -39,7 +28,6 @@
 }
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
-
 .light-background {
   --background-color: #f6f6f6;
   --surface-color: #ffffff;
@@ -776,7 +764,6 @@ section,
 }
 
 /* Estilo de tabla */
-
 .div-tabla {
   margin: 0;
   border: 0;
@@ -787,10 +774,115 @@ section,
   width: 100%;
 }
 
-.tr {
-  
+.form-check-label {
+  margin-left: 5px; /* Ajusta el margen izquierdo del texto del checkbox */
 }
 
-.td {
-  
+.terms {
+  margin-left: 200px;
+}
+
+#userIconButton {
+  background: none; /* Sin fondo */
+  border: none; /* Sin borde */
+  cursor: pointer; /* Cambia el cursor al pasar el mouse */
+  font-size: 1.5rem; /* Tamaño del ícono */
+}
+
+/* Efecto al pasar el mouse sobre el ícono */
+#userIconButton:hover {
+  color: #007bff; /* Cambia el color al pasar el mouse */
+}
+
+.user-popup {
+  display: none; /* Oculto por defecto */
+  position: absolute;
+  border: 1px solid #ccc;
+  width: 100px;
+  padding: 10px;
+  z-index: 1000;
+}
+
+.user-icon:hover .user-popup {
+  display: block; /* Mostrar el pop-up al pasar el cursor */
+}
+
+/* Estilo para el formulario */
+#profileForm {
+  background-color: #495057; /* Fondo del formulario */
+  color: #ffffff; /* Color del texto */
+  border-radius: 10px; /* Bordes redondeados */
+  padding: 20px; /* Espaciado interno */
+}
+
+.form-label {
+  color: #ffffff; /* Color de las etiquetas */
+}
+
+.btn-secondary {
+  background-color: #007bff; /* Color del botón secundario */
+  border: none; /* Sin borde */
+}
+
+.btn-danger {
+  background-color: #dc3545; /* Color del botón de eliminar */
+  border: none; /* Sin borde */
+}
+
+.btn:hover {
+  opacity: 0.9; /* Efecto hover */
+}
+
+.info-label {
+  display: block;
+  padding: 8px;
+  border: 1px solid #ced4da; /* Borde gris claro */
+  border-radius: 5px; /* Bordes redondeados */
+  background-color: #6c757d; /* Fondo gris oscuro */
+  color: #ffffff; /* Color del texto */
+  margin-top: 5px; /* Espaciado superior */
+}
+
+.btn {
+  width: auto; /* Asegúrate de que el ancho sea automático */
+  padding: 10px 20px; /* Ajusta el padding según sea necesario */
+  font-size: 16px; /* Ajusta el tamaño de la fuente */
+  margin-top: 10px; /* Espaciado superior para separar del contenido anterior */
+}
+
+/* Asegúrate de que el botón "Enviar" tenga el mismo estilo que los otros */
+.btn-primary {
+  background-color: #007bff; /* Color del botón de enviar */
+  border: none; /* Sin borde */
+}
+
+.btn-primary:hover {
+  opacity: 0.9; /* Efecto hover */
+}
+
+/* CSS para ajustar el tamaño de los inputs */
+.form-control {
+  height: 35px; /* Ajusta la altura del input */
+  font-size: 14px; /* Ajusta el tamaño de la fuente */
+}
+
+.notification {
+  position: fixed; /* Fija la notificación en la pantalla */
+  bottom: 20px; /* Distancia desde la parte inferior */
+  left: 20px; /* Distancia desde la izquierda */
+  padding: 15px;
+  border-radius: 5px;
+  display: none; /* Ocultar por defecto */
+  z-index: 1000; /* Asegúrate de que esté por encima de otros elementos */
+  transition: opacity 0.5s ease; /* Transición suave */
+}
+
+.notification.success {
+  background-color: #d4edda; /* Color de fondo verde claro */
+  color: #155724; /* Color de texto verde oscuro */
+}
+
+.notification.error {
+  background-color: #f8d7da; /* Color de fondo rojo claro */
+  color: #721c24; /* Color de texto rojo oscuro */
 }
