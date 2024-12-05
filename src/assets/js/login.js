@@ -26,9 +26,9 @@ document.getElementById('loginForm').addEventListener('submit', function(e) {
 
             // Redirigir según el rol
             if (data.role === 'admin') {
-                window.location.href = 'admin.html'; // Redirigir al panel de administración
+                window.location.href = '/admin'; // Redirigir al panel de administración
             } else {
-                window.location.href = 'index.html'; // Redirigir a la página de usuario normal
+                window.location.href = '/'; // Redirigir a la página de usuario normal
             }
         } else {
             console.log('Error en el inicio de sesión:', data.message);

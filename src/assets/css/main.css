@@ -844,13 +844,12 @@ section,
 }
 
 .btn {
-  width: auto; /* Asegúrate de que el ancho sea automático */
-  padding: 10px 20px; /* Ajusta el padding según sea necesario */
-  font-size: 16px; /* Ajusta el tamaño de la fuente */
-  margin-top: 10px; /* Espaciado superior para separar del contenido anterior */
+  width: auto; 
+  padding: 10px 20px; 
+  font-size: 16px; 
+  margin-top: 10px;
 }
 
-/* Asegúrate de que el botón "Enviar" tenga el mismo estilo que los otros */
 .btn-primary {
   background-color: #007bff; /* Color del botón de enviar */
   border: none; /* Sin borde */
@@ -860,7 +859,6 @@ section,
   opacity: 0.9; /* Efecto hover */
 }
 
-/* CSS para ajustar el tamaño de los inputs */
 .form-control {
   height: 35px; /* Ajusta la altura del input */
   font-size: 14px; /* Ajusta el tamaño de la fuente */

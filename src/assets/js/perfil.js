@@ -55,6 +55,26 @@ document.addEventListener('DOMContentLoaded', function() {
 
     profileForm.addEventListener('submit', function(event) {
         event.preventDefault();
+        const zip = document.getElementById('zip').value;
+        const extNumber = document.getElementById('extNumber').value;
+
+        // Verificar que el número exterior tenga entre 1 y 10 dígitos
+        if (extNumber.length < 1 || extNumber.length > 10) {
+            showNotification("El número exterior debe tener entre 1 y 10 dígitos.", 'error');
+            return; // Detener el envío del formulario
+        }
+    
+        // Verificar que el número exterior sea un número válido
+        if (!/^\d+$/.test(extNumber)) {
+            showNotification("El número exterior debe ser un número válido.", 'error');
+            return; // Detener el envío del formulario
+        }
+
+        // Verificar que el código postal tenga exactamente 5 dígitos
+        if (zip.length !== 5 || !/^\d{5}$/.test(zip)) {
+            showNotification("El código postal debe ser exactamente de 5 dígitos.", 'error');
+            return; // Detener el envío del formulario
+        }
 
         const userId = localStorage.getItem('userId');
         if (!userId) {
@@ -260,4 +280,5 @@ document.addEventListener('DOMContentLoaded', function() {
             }, 500); // Esperar a que termine la transición
         }, 5000);
     }
+    
 });

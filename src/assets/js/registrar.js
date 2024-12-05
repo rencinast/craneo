@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
             showNotification(data.message, 'success'); // Muestra el mensaje de éxito
             if (data.status === 'success') {
                 // Redirige a login.html después del registro exitoso
-                window.location.href = 'login.html';
+                window.location.href = '/login';
             }
         })
         .catch(error => {
