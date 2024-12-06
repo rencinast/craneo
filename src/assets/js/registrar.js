@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
 
-        fetch('/registrar', {
+        fetch('/api/auth/registrar', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

@@ -8,7 +8,7 @@ document.getElementById('loginForm').addEventListener('submit', function(e) {
 
     console.log('Datos a enviar:', data);
 
-    fetch('/login', {
+    fetch('/api/auth/login', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',

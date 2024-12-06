@@ -38,14 +38,14 @@ document.addEventListener('DOMContentLoaded', function() {
     const logoutButton = document.getElementById('logoutButton');
     if (logoutButton) {
         logoutButton.addEventListener('click', function() {
-            fetch('/logout', {
+            fetch('/api/profiles/logout', {
                 method: 'POST',
             })
             .then(response => response.text())
             .then(data => {
                 alert(data);
                 localStorage.removeItem('loggedIn'); // Eliminar el estado de inicio de sesión
-                window.location.href = 'index.html'; // Redirigir a la página de inicio
+                window.location.href = '/'; // Redirigir a la página de inicio
             })
             .catch(error => {
                 console.error('Error:', error);

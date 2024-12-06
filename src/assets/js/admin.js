@@ -23,7 +23,7 @@ function showNotification(message, type) {
 // Función para obtener usuarios
 async function fetchUsers() {
     try {
-        const response = await fetch('/api/users');
+        const response = await fetch('/api/users/usuarios');
         const users = await response.json();
 
         if (!Array.isArray(users)) {
@@ -70,7 +70,7 @@ async function deleteUser (userId) {
     const confirmation = confirm("¿Estás seguro de que deseas eliminar este usuario?");
     if (confirmation) {
         try {
-            const response = await fetch(`/api/users/${userId}`, {
+            const response = await fetch(`/api/users/usuario/${userId}`, {
                 method: 'DELETE',
                 headers: {
                     'Content-Type': 'application/json'
@@ -94,7 +94,7 @@ async function deleteUser (userId) {
 // Función para cerrar sesión
 async function logout() {
     try {
-        const response = await fetch('/logout', {
+        const response = await fetch('/api/profiles/logout', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -103,8 +103,8 @@ async function logout() {
 
         const data = await response.json();
         if (data.status === 'success') {
-            // Redirigir a la página de inicio o login
-            window.location.href = 'index.html'; 
+            localStorage.removeItem('loggedIn'); // Eliminar el estado de inicio de sesión
+            window.location.href = '/'; 
         } else {
             showNotification(data.message, 'error'); // Mostrar mensaje de error
         }
