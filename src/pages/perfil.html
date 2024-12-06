@@ -5,28 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perfil</title>
     <!-- Favicons -->
-    <link href="assets/img/baner.ico" rel="icon">
-    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <link href="/img/baner.ico" rel="icon">
+    <link href="/img/apple-touch-icon.png" rel="apple-touch-icon">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
     <!-- Vendor CSS Files -->
-    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="/vendor/aos/aos.css" rel="stylesheet">
+    <link href="/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
 
     <!-- Main CSS File -->
-    <link href="assets/css/main.css" rel="stylesheet">
+    <link href="/css/main.css" rel="stylesheet">
 </head>
 <body class="dark-background">
     <header id="header" class="header fixed-top">
         <div class="branding d-flex align-items-center">
             <div class="container position-relative d-flex align-items-center justify-content-between">
-                <a href="index.html" class="logo d-flex align-items-center"></a>
+                <a href="/" class="logo d-flex align-items-center"></a>
                 <nav id="navmenu" class="navmenu">
                     <ul>
-                        <li><a href="index.html" class="active">REGRESAR</a></li>
+                        <li><a href="/" class="active">REGRESAR</a></li>
                     </ul>
                     <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
                 </nav>
@@ -72,7 +72,7 @@
                     <div class="col-md-6 mb-3">
                         <label for="extNumber" class="form-label">Número Ext:</label>
                         <span id="extNumberLabel" class="info-label">Sin información</span>
-                        <input type="text" id="extNumber" name="extNumber" class="form-control" style="display: none;" pattern="\d{10}" maxlength="10" title="Por favor, ingrese solo números y un máximo de 10 dígitos.">
+                        <input type="text" id="extNumber" name="extNumber" class="form-control" style="display: none;" pattern="\d*" maxlength="10" title="Por favor, ingrese solo números y un máximo de 10 dígitos.">
                     </div>
                 
                     <div class="col-md-6 mb-3">
@@ -86,7 +86,7 @@
                     <div class="col-md-6 mb-3">
                         <label for="zip" class="form-label">Código Postal:</label>
                         <span id="zipLabel" class="info-label">Sin información</span>
-                        <input type="text" id="zip" name="zip" class="form-control" style="display: none;"pattern="\d{10}" maxlength="5" title="Por favor, ingrese solo números y un máximo de 5 dígitos.">
+                        <input type="text" id="zip" name="zip" class="form-control" style="display: none;"pattern="\d{5}" maxlength="5" title="Por favor, ingrese solo números y un máximo de 5 dígitos.">
                     </div>
                 
                     <div class="col-md-6 mb-3">
@@ -119,6 +119,6 @@
         </form>
     </main>
     <div id="notification" class="notification" style="display: none;"></div>
-    <script src="assets/js/perfil.js"></script>
+    <script src="/js/perfil.js"></script>
 </body>
 </html>
